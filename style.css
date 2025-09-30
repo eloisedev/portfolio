@@ -24,7 +24,7 @@ html {
     height: 150vh;
 }
 .bag-interior {
-    background-image: url(images/bag.jpeg);
+    background-image: url(bag.jpeg);
     width:80%;
     height: 75%;
     margin-bottom: 20%;
@@ -48,7 +48,7 @@ html {
 
 /* ID */
 .id {
-    background-image: url(images/idcard.png);
+    background-image: url(idcard.png);
     background-size: cover;
     background-position: center;
     width: 80%;
@@ -63,7 +63,7 @@ html {
 
 
 .id-image-left {
-    background-image: url(images/pfp.jpg);
+    background-image: url(pfp.jpg);
     width: 20%;
     aspect-ratio: 3/4;
     background-size: cover;
@@ -96,7 +96,7 @@ html {
 }
 /* POST IT */
 .postit {
-    background-image: url(images/postit.png);
+    background-image: url(postit.png);
     background-size: cover;
     background-position: center;
     width: 55%;
@@ -164,7 +164,7 @@ html {
     transition: transform .2s;
     height: 35%;
     display: flex;
-    background-image: url(images/bracelet.png);
+    background-image: url(bracelet.png);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -213,7 +213,7 @@ html {
 }
 
 .twitter {
-    background-image: url(images/twitter.svg.png);
+    background-image: url(twitter.svg.png);
     background-size: cover;
     background-position: center;
     width: 9vw;
@@ -221,7 +221,7 @@ html {
 }
 
 .instagram {
-    background-image: url(images/instagram.png.webp);
+    background-image: url(instagram.png.webp);
     background-size: cover;
     background-position: center;
     width: 8vw;
@@ -229,7 +229,7 @@ html {
 }
 
 .github {
-    background-image: url(images/github.png);
+    background-image: url(github.png);
     background-size: cover;
     background-position: center;
     width: 8vw;
