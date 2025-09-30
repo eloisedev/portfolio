@@ -1,6 +1,6 @@
 /* CSS FOR ELOISE DEVITO PORTFOLIO
 coded by Eloise DeVito 
-last updated: 9/29/25 */
+last updated: 9/30/25 */
 .bag {
     opacity:0.8;
     position: absolute;
@@ -24,7 +24,7 @@ html {
     height: 150vh;
 }
 .bag-interior {
-    background-image: url(bag.jpeg);
+    background-image: url(images/bag.jpeg);
     width:80%;
     height: 75%;
     margin-bottom: 20%;
@@ -48,10 +48,11 @@ html {
 
 /* ID */
 .id {
-    background-image: url(idcard.png);
+    background-image: url(images/idcard.png);
     background-size: cover;
     background-position: center;
     width: 80%;
+    transition: transform .2s;
     height: 40vw;
     position: relative;
     margin-left: -50%;
@@ -62,7 +63,7 @@ html {
 
 
 .id-image-left {
-    background-image: url(pfp.jpg);
+    background-image: url(images/pfp.jpg);
     width: 20%;
     aspect-ratio: 3/4;
     background-size: cover;
@@ -88,12 +89,18 @@ html {
     font-size: 1.5vw;
     
 }
+.id:hover {
+    z-index: 1003;
+    transform: scale(1.1);
+    cursor: pointer;
+}
 /* POST IT */
 .postit {
-    background-image: url(postit.png);
+    background-image: url(images/postit.png);
     background-size: cover;
     background-position: center;
     width: 55%;
+    transition: transform .2s;
     aspect-ratio: 1 / 1;
     margin-left: 50%;
     transform: rotate(2deg);
@@ -113,6 +120,12 @@ html {
     margin: 0.3em 0;
     transform: translatey(-80%);
 }
+  
+.postit:hover {
+    z-index: 1003;
+    transform: scale(1.1); 
+    cursor: pointer;
+}
 
 /* POLOROID */
 .poloroid {
@@ -122,6 +135,7 @@ html {
     background-color: rgb(255, 255, 255);
     margin-left: -40%;
     display: flex;
+    transition: transform .2s;
     flex-direction: column;
     transform:rotate(1deg);
 }
@@ -139,7 +153,29 @@ html {
     margin-top: -50%;
     transform: translatey(100%);
 }
-
+.poloroid:hover {
+    z-index: 1003;
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+/* BRACELET */
+.bracelet {
+    width: 52%;
+    transition: transform .2s;
+    height: 35%;
+    display: flex;
+    background-image: url(images/bracelet.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 52%;
+    left: 40%;
+}
+.bracelet:hover {
+    z-index: 1003;
+    transform: scale(1.1); 
+    cursor: pointer;
+}
 /* TITLE - HEADER THING IDK */
 .title {
     color: white;
@@ -177,25 +213,25 @@ html {
 }
 
 .twitter {
-    background-image: url(twitter.svg.png);
+    background-image: url(images/twitter.svg.png);
     background-size: cover;
     background-position: center;
-    width: 13vw;
-    height: 11vw;
+    width: 9vw;
+    height: 8vw;
 }
 
 .instagram {
-    background-image: url(instagram.png.webp);
+    background-image: url(images/instagram.png.webp);
     background-size: cover;
     background-position: center;
-    width: 12vw;
-    height: 12vw;
+    width: 8vw;
+    height: 8vw;
 }
 
 .github {
-    background-image: url(github.png);
+    background-image: url(images/github.png);
     background-size: cover;
     background-position: center;
-    width: 12vw;
-    height: 12vw;
+    width: 8vw;
+    height: 8vw;
 }
