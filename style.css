@@ -1,6 +1,6 @@
 /* CSS FOR ELOISE DEVITO PORTFOLIO
 coded by Eloise DeVito 
-last updated: 9/30/25 */
+last updated: 10/09/25 */
 .bag {
     opacity:0.8;
     position: absolute;
@@ -24,7 +24,7 @@ html {
     height: 150vh;
 }
 .bag-interior {
-    background-image: url(bag.jpeg);
+    background-image: url(images/bag.jpeg);
     width:80%;
     height: 75%;
     margin-bottom: 20%;
@@ -48,7 +48,7 @@ html {
 
 /* ID */
 .id {
-    background-image: url(idcard.png);
+    background-image: url(images/idcard.png);
     background-size: cover;
     background-position: center;
     width: 80%;
@@ -63,7 +63,7 @@ html {
 
 
 .id-image-left {
-    background-image: url(pfp.jpg);
+    background-image: url(images/pfp.jpg);
     width: 20%;
     aspect-ratio: 3/4;
     background-size: cover;
@@ -96,7 +96,7 @@ html {
 }
 /* POST IT */
 .postit {
-    background-image: url(postit.png);
+    background-image: url(images/postit.png);
     background-size: cover;
     background-position: center;
     width: 55%;
@@ -124,7 +124,7 @@ html {
 .postit:hover {
     z-index: 1003;
     transform: scale(1.1); 
-    cursor: pointer;
+    /*cursor: pointer; */
 }
 
 /* POLOROID */
@@ -164,7 +164,7 @@ html {
     transition: transform .2s;
     height: 35%;
     display: flex;
-    background-image: url(bracelet.png);
+    background-image: url(images/bracelet.png);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -193,12 +193,12 @@ html {
 .contact {
     color: white;
     position: absolute;
-    top: 90%;
-    font-size: 3vw;
+    top: 375vw;
+    font-size: 2vw;
     display: inline-block;
     z-index: 1001;
     font-family: "Archivo", sans-serif;
-    left: 16%;
+    left: 25%;
     text-align: center;
 
 }
@@ -209,29 +209,121 @@ html {
 
 .twitter, .instagram, .github {
     display: flex;
-    margin: 5%;
+    margin: 1%;
 }
 
 .twitter {
-    background-image: url(twitter.svg.png);
+    background-image: url(images/twitter.svg.png);
     background-size: cover;
     background-position: center;
-    width: 9vw;
-    height: 8vw;
+    width: 5vw;
+    height: 4vw;
 }
 
 .instagram {
-    background-image: url(instagram.png.webp);
+    background-image: url(images/instagram.png.webp);
     background-size: cover;
     background-position: center;
-    width: 8vw;
-    height: 8vw;
+    width: 4vw;
+    height: 4vw;
 }
 
 .github {
-    background-image: url(github.png);
+    background-image: url(images/github.png);
     background-size: cover;
     background-position: center;
-    width: 8vw;
-    height: 8vw;
+    width: 4vw;
+    height: 4vw;
+}
+
+/* ABOUT ME */
+#aboutme {
+    color: white;
+    position: absolute;
+    font-size: 3vw;
+    display: inline-block;
+    z-index: 1001;
+    font-family: "Archivo", sans-serif;
+    text-align: center;
+
+}
+.bluenotecard {
+    background-image: url(images/bluenotecard.png);
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s;
+}
+.purplenotecard {
+    background-image: url(images/purplenotecard.png);
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s;
+}
+.greennotecard {
+    background-image: url(images/greennotecard.png);
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s;
+}
+.bluenotecard:hover, .greennotecard:hover, .purplenotecard:hover {
+    z-index: 1003;
+    transform: translateY(-100px) scale(1.1);
+}
+/*PAPER W/ SKILLS */
+.paper {
+    width: 90%;
+    height: 50%;
+    background-image: url(images/paper.png);
+    background-size: cover;
+    background-position: center;
+    transform:rotate(10deg);
+}
+
+.paper-text {
+    padding: 10%;
+    font-size: 1.5vw;
+    font-family:'Courier New', Courier, monospace;
+}
+/* MEDIA QUERYS */
+@media only screen and (max-width: 600px) {
+    .bluenotecard, .greennotecard, .purplenotecard {
+        width: 70vw;
+        height: 40vw;
+        margin: 3%;
+        padding: 3vw;
+        font-size: 3.5vw;
+        margin-top: -30%;
+        color: black;
+        font-family: "Reenie Beanie", cursive;
+    }
+    #aboutme {
+        left: 12%;
+        top: 100%;    
+    }
+    .paper {
+        position: absolute;
+        left: 7%;
+        top: 135%;
+    }
+}
+@media only screen and (min-width: 601px) {
+    .bluenotecard, .greennotecard, .purplenotecard {
+        width: 45vw;
+        height: 30vw;
+        margin: 5%;
+        padding: 3vw;
+        margin-top: -45%;
+        font-size: 2.5vw;
+        color: black;
+        font-family: "Reenie Beanie", cursive;
+    }
+    #aboutme {
+        left: 23%;
+        top: 100%;    
+    }
+    .paper {
+        position: absolute;
+        left: 7%;
+        top: 120%;
+    }
 }
